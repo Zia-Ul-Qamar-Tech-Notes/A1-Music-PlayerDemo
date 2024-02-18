@@ -80,7 +80,7 @@ async function displayAlbum() {
     const e = array[index];
     if (e.href.includes("/songs/")) {
       folder = e.href.split("/").slice(-2)[1];
-      let a = await fetch(`http://127.0.0.1:5500/songs/${folder}/info.json`);
+      let a = await fetch(`/songs/${folder}/info.json`);
       let response = await a.json();
       cardContainer.innerHTML =
         cardContainer.innerHTML +
