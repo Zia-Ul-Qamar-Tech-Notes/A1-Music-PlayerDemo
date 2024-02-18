@@ -4,24 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>zPlayer - Web Music Player: Music For everyone</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="utility.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utility.css" />
   </head>
   <body>
     <div class="container flex">
       <div class="left">
         <div class="close invert">
-          <img src="close.svg" alt="">
+          <img src="img/close.svg" alt="">
         </div>
         <div class="home m-1 p-1 rounded bg-gray">
           <div class="logo">
-            <img width="133px" class="invert" src="logo.svg" alt="" srcset="" />
+            <img width="133px" class="invert" src="img/logo.svg" alt="" srcset="" />
           </div>
           <ul>
             <li>
               <img
                 class="invert"
-                src="home.svg"
+                src="img/home.svg"
                 alt="Home Icon"
                 srcset=""
               />Home
@@ -29,7 +29,7 @@
             <li>
               <img
                 class="invert"
-                src="search.svg"
+                src="img/search.svg"
                 alt="Search Icon"
                 srcset=""
               />Search
@@ -38,7 +38,7 @@
         </div>
         <div class="library p-1 m-1 rounded bg-gray">
           <div class="heading">
-            <img class="invert" src="library.svg" alt="library" srcset="" />
+            <img class="invert" src="img/library.svg" alt="library" srcset="" />
             <h4>My-Library</h4>
           </div>
           <div class="songList">
@@ -51,7 +51,7 @@
       <div class="right rounded bg-gray">
         <div class="header ">
           <div class="nav">
-              <img class="invert hamburger" src="hamburger.svg" alt="">
+              <img class="invert hamburger" src="img/hamburger.svg" alt="">
        
             <svg class="arrow invert"
               xmlns="http://www.w3.org/2000/svg"
@@ -93,28 +93,7 @@
         <div class="spotify-playlist">
             <h1>Music Playlist</h1>
             <div class="cardContainer">
-                <div class="card">
-                    <div class="play">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="70%" height="70%" viewBox="0 0 24 24" fill="none">
-                            <circle cx="12" cy="12" r="10" stroke="#000000" stroke-width="1.5" fill="green"/> <!-- Change fill to green -->
-                            <path d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z" stroke="#000000" stroke-width="1.5" stroke-linejoin="round"/>
-                          </svg>
-                    </div>
-                    <img aria-hidden="false" draggable="false" loading="lazy" src="https://concerts.spotifycdn.com/images/live-events_category-image.jpg" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
-                    <h2>Happy Hits</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, dicta?</p>
-                </div>
-                 <div class="card">
-                    <div class="play">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="70%" height="70%" viewBox="0 0 24 24" fill="none">
-                            <circle cx="12" cy="12" r="10" stroke="#000000" stroke-width="1.5" fill="green"/> <!-- Change fill to green -->
-                            <path d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z" stroke="#000000" stroke-width="1.5" stroke-linejoin="round"/>
-                          </svg>
-                    </div>
-                    <img aria-hidden="false" draggable="false" loading="lazy" src="https://concerts.spotifycdn.com/images/live-events_category-image.jpg" alt="" class="mMx2LUixlnN_Fu45JpFB Op2n2H4o1iY0Xo2wAUH9 Yn2Ei5QZn19gria6LjZj">
-                    <h2>Happy Hits</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, dicta?</p>
-                </div>
+                
             </div>
             <div class="playBar">
               <div class="seekBar">
@@ -124,9 +103,9 @@
                 <div class="songInfo"></div>
                 <div class="songButtons">
                     
-                    <img width="30" id="previous" src="prevsong.svg" alt="Previous" srcset="">
-                    <img width="30" id="mplayButton" src="play.svg" alt="PlayButton" srcset="">
-                    <img width="30" id="next" src="nextsong.svg" alt="Next" srcset="">
+                    <img width="30" id="previous" src="img/prevsong.svg" alt="Previous" srcset="">
+                    <img width="30" id="mplayButton" src="img/play.svg" alt="PlayButton" srcset="">
+                    <img width="30" id="next" src="img/nextsong.svg" alt="Next" srcset="">
                 </div>
                 <div class="songTime">00:00</div>
               </div>
@@ -136,6 +115,6 @@
        
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
