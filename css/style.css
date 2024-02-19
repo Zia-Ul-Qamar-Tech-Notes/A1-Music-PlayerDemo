@@ -284,7 +284,9 @@ body{
         justify-content: center;
         gap: 15px;
     }
-
+    .header > *{
+        padding: 2px;
+    }
     .hamburger{
         cursor: pointer;
         display: inline;
@@ -295,7 +297,7 @@ body{
       }
     .playBar{
         width: 88vw;
-        height: 100px;
+        height: 89px;
         justify-content: center;
         font-size: 16px;
     }
@@ -316,7 +318,11 @@ body{
         padding: 0;
     }
     .spotify-playlist .card{
-        width: 300px;
+        width: 250px;
+    }
+    .spotify-playlist .h1{
+        padding: 5px;
+        font-size: 16px;
     }
     .aboveBar{
         flex-direction: column;

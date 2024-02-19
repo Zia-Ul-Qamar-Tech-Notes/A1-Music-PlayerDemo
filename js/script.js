@@ -1,7 +1,7 @@
 let currentSong = new Audio();
 let songs;
 let currPlaylist;
-let folder;
+// let folder;
 
 const time = (seconds) => {
   const min = Math.floor(seconds / 60);
@@ -79,7 +79,8 @@ async function displayAlbum() {
   for (let index = 0; index < array.length; index++) {
     const e = array[index];
     if (e.href.includes("/songs/")) {
-      folder = e.href.split("/").slice(-2)[1];
+      let folder = e.href.split("/").slice(-2)[1];
+      console.log(folder)
       let a = await fetch(`/songs/${folder}/info.json`);
       let response = await a.json();
       cardContainer.innerHTML =
@@ -105,7 +106,7 @@ async function displayAlbum() {
 }
 
 async function main() {
-  await getSongs(`songs/${folder}`);
+  await getSongs(`songs/naat`);
   displayAlbum();
 
   mplayButton.addEventListener("click", () => {
